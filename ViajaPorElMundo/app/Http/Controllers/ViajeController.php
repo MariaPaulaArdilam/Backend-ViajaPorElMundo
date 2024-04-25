@@ -19,10 +19,7 @@ class ViajeController extends Controller
         return response()->json(['message' => 'Datos de selección de viaje guardados exitosamente']);
     }
 
-    public function index($valor)
-    {
-        return Ciudad::where('valor', $valor)->get();
-    }
+  
 
 
 }
